@@ -3,15 +3,19 @@ import bookImage from '../../assets/pngwing 1.png'
 
 const Banner = () => {
     return (
-        <div className='flex justify-between items-center w-full p-16 bg-gray-100 mt-4 mb-4'>
-            <div>
-                <h2 className='text-4xl font-bold mb-4'>Books to freshen up <br/> your bookshelf</h2>
-                <button className='bg-[#23BE0A] text-white p-4 rounded-lg '>View The List</button>
-            </div>
-            <div>
-                <img className='w-3/5' src={bookImage} alt="" />
-            </div>
-        </div>
+     <div className="hero bg-base-200 h-[554] w-[1165] mt-2">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img
+      src={bookImage}
+      className="max-w-sm rounded-lg"
+    />
+    <div>
+      <h1 className="text-5xl font-bold">Books to freshen up <br/> your bookshelf</h1>
+      
+      <button className="bg-[#23BE0A] text-white rounded-lg p-4 mt-4">View The List</button>
+    </div>
+  </div>
+</div>
     );
 };
 
